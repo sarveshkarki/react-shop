@@ -43,7 +43,7 @@ const ProductList: React.FC = () => {
   return (
     <div>
       <h2>Product List</h2>
-      <ul>
+      <ul style={{ paddingInlineStart: "10px" }}>
         {products.map((product) => (
           <ProductListCard key={product.id} {...product} />
         ))}
